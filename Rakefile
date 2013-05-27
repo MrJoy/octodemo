@@ -1,11 +1,8 @@
-require 'pathname'
-$LOAD_PATH << (Pathname.pwd + 'lib')
-
 require 'rubygems'
 require 'rake'
 require 'rake/clean'
 require 'date'
-require 'octodemo'
+require './lib/octodemo'
 
 
 #############################################################################
