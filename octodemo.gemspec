@@ -19,11 +19,11 @@ Gem::Specification.new do |octo|
 
   # = MANIFEST =
   octo.files = %w[
-    Gemfile
-    Gemfile.lock
     README.md
     Rakefile
     lib/octodemo.rb
+    lib/octodemo/project_tasks.rake
+    lib/octodemo/rake.rb
     octodemo.gemspec
   ]
   # = MANIFEST =
