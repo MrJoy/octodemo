@@ -31,7 +31,8 @@ Gem::Specification.new do |octo|
   octo.require_paths = %w[lib]
   octo.executables   = octo.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
 
-  # {
+  {
+    'rake' => '~> 10.0.4',
   #   'rack' => '~> 1.5.0',
   #   'jekyll' => '~> 1.0.2',
   #   'redcarpet' => '~> 2.2.2',
@@ -54,9 +55,9 @@ Gem::Specification.new do |octo|
   #   'rb-inotify' => '~> 0.9.0',
   #   'rb-fsevent' => '~> 0.9.3',
   #   'rb-fchange' => '~> 0.0.6',
-  # }.each do |gem_name, version|
-  #   octo.add_runtime_dependency(gem_name, version)
-  # end
+  }.each do |gem_name, version|
+    octo.add_runtime_dependency(gem_name, version)
+  end
 
-  octo.add_development_dependency('rake', '~> 10.0.4')
+  # octo.add_development_dependency('rake', '~> 10.0.4')
 end
