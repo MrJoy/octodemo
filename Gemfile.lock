@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    octodemo (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  octodemo!
+  rake (~> 10.0.4)
