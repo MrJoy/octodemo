@@ -1,4 +1,4 @@
-module Octopress
+module Octodemo
   class Plugin
     def self.inherited(subclass)
       @plugins ||= []
