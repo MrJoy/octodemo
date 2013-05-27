@@ -1,4 +1,5 @@
 require 'pathname'
+require 'active_support/all'
 
 module Octodemo
   VERSION='0.0.1'

@@ -4,6 +4,8 @@ module Octodemo
       ctx.instance_eval do
         load Octodemo::OCTODEMO_ROOT + 'octodemo' + 'project_tasks.rake'
       end
+
+      Octodemo::Plugin.init_rake!(ctx)
     end
   end
 end

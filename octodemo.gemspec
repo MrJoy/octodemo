@@ -22,6 +22,7 @@ Gem::Specification.new do |octo|
     README.md
     Rakefile
     lib/octodemo.rb
+    lib/octodemo/plugin.rb
     lib/octodemo/project_tasks.rake
     lib/octodemo/rake.rb
     octodemo.gemspec
@@ -33,6 +34,7 @@ Gem::Specification.new do |octo|
 
   {
     'rake' => '~> 10.0.4',
+    'activesupport' => '~> 3.2.13',
   #   'rack' => '~> 1.5.0',
   #   'jekyll' => '~> 1.0.2',
   #   'redcarpet' => '~> 2.2.2',
