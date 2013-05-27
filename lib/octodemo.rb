@@ -6,4 +6,5 @@ module Octodemo
 end
 
 $LOAD_PATH << Octodemo::OCTODEMO_ROOT
+require 'octodemo/plugin'
 require 'octodemo/rake'
