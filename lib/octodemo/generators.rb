@@ -15,8 +15,13 @@ generator :post do
     timestamp       = args.timestamp#.in_project_timezone
     timestamp_fname = timestamp.strftime('%Y%m%d%H%M%S')
 
-    target_dir      = args.draft ? '_drafts' : '_posts'
-    target_fname    = "#{timestamp_fname}_#{title_fname}"
+    if(args.draft)
+      target_dir      = '_drafts'
+      target_fname    = "#{title_fname}"
+    else
+      target_dir      = '_posts'
+      target_fname    = "#{timestamp_fname}_#{title_fname}"
+    end
 
     dir target_dir do
       page target_fname,
